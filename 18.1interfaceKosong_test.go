@@ -39,7 +39,7 @@ func InputTest(input interface{}) interface{} {
 
 func TestInterfaceKosong(t *testing.T) {
 	data1 := Ups(2) //var data1 interface{} = Ups()
-	data2 := InputTest("test")
+	data2 := InputTest(1)
 
 	fmt.Println(data1)
 	fmt.Println(data2)

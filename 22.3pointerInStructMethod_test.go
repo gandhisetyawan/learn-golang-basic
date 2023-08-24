@@ -18,13 +18,14 @@ type Man struct {
 
 func (man *Man) Married() {
 	man.Name = "Mr. " + man.Name
+	fmt.Println(man.Name)
 }
 
 func TestPointerStructMethod(t *testing.T) {
 	var data Man = Man{
 		Name: "gandhi",
 	}
-	data.Married()
+	data.Married() // mengubah data add titile Mr.
 
-	fmt.Println(data.Name)
+	fmt.Println(data) // data asli ikut berubah
 }

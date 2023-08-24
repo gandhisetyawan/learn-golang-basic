@@ -29,8 +29,15 @@ func TestPointerFunction(t *testing.T) {
 		Province: "Jawa Barat",
 		Country:  "",
 	}
-	var addressPointer *Alamat = &address
-	ChangeAddressToIndonesia(addressPointer)
+	// var addressPointer *Alamat = &address
+	// ChangeAddressToIndonesia(addressPointer)
+	ChangeAddressToIndonesia(&address)
+
+	ChangeAddressToIndonesia(&Alamat{
+		City:     "Cikarang lagi",
+		Province: "Jawa Barat lagi",
+		Country:  "",
+	})
 
 	fmt.Println(address)
 }

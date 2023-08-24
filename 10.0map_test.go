@@ -34,6 +34,7 @@ func TestMap(t *testing.T) {
 	fmt.Println("===========>>> edit data map <<<==========")
 	person["lastname"] = "setyawan"
 	fmt.Println(person)
+	fmt.Println("panjang map :", len(person))
 
 	//MAP TANPA DATA SEBELUMNYA
 	fmt.Println("===========>>> Map tanpa data sebelumnya <<<==========")
@@ -48,4 +49,5 @@ func TestMap(t *testing.T) {
 	fmt.Println("===========>>> hapus data map <<<==========")
 	delete(book, "error")
 	fmt.Println(book)
+	fmt.Println("panjang map book :", len(book))
 }
